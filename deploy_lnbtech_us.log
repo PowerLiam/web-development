@@ -1,0 +1,5 @@
+Beginning deploy to remote server.
+Backing up remote data on remote server.
+ssh liamnbtech@lnbtech.us rsync -r --exclude=*_BACKUP /home/liamnbtech/ /home/liamnbtech/lnbtech.us_BACKUP
+Syncing data to remote server.
+Finished deploying to remote server.
