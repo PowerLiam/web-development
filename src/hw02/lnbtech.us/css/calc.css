@@ -1,0 +1,86 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(253, 240, 234);
+}
+.calc-container {
+    font-family: "Courier New";
+    width: 25%;
+    height: 50%;
+    background-color: rgb(24, 6, 6);
+    padding:20px;
+    display: inline-grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr  [col-start]);
+    grid-template-rows: [display-row-start] 10% repeat(4, 1fr  [row-start]);
+    grid-template-areas:
+    "calc-display calc-display calc-display calc-display"
+    "calc-button-7 calc-button-8 calc-button-9 calc-button-pluseq"
+    "calc-button-4 calc-button-5 calc-button-6 calc-button-minus"
+    "calc-button-1 calc-button-2 calc-button-3 calc-button-times"
+    "calc-button-c calc-button-0 calc-button-dot calc-button-divide";
+}
+.calc-container button {
+    width: 100%;
+    height: 100%;
+    font-family: "Courier New";
+    font-size: 1.5rem;
+
+}
+.calc-display {
+    background-color: rgba(157, 218, 155, 0.945);
+    grid-area: calc-display;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+}
+.calc-button-7 {
+    grid-area: calc-button-7;
+}
+.calc-button-8 {
+    grid-area: calc-button-8;
+}
+.calc-button-9 {
+    grid-area: calc-button-9;
+}
+.calc-button-pluseq {
+    grid-area: calc-button-pluseq;
+}
+.calc-button-4 {
+    grid-area: calc-button-4;
+}
+.calc-button-5 {
+    grid-area: calc-button-5;
+}
+.calc-button-6 {
+    grid-area: calc-button-6;
+}
+.calc-button-minus {
+    grid-area: calc-button-minus;
+}
+.calc-button-1 {
+    grid-area: calc-button-1;
+}
+.calc-button-2 {
+    grid-area: calc-button-2;
+}
+.calc-button-3 {
+    grid-area: calc-button-3;
+}
+.calc-button-times {
+    grid-area: calc-button-times;
+}
+.calc-button-c {
+    grid-area: calc-button-c;
+}
+.calc-button-0 {
+    grid-area: calc-button-0;
+}
+.calc-button-dot {
+    grid-area: calc-button-dot;
+}
+.calc-button-divide {
+    grid-area: calc-button-divide;
+}
