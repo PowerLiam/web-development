@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function() {
     const BUILDING_NUMBER = "BUILDING_NUMBER";
     const AWAITING_NUMBER = "AWAITING_NUMBER";
     const INITIAL_CALCULATOR_STATE = {

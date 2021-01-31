@@ -20,7 +20,7 @@ sub backup_remote_on_remote {
 sub sync_local_to_remote {
     print "Syncing data to remote server.\n";
     system((
-        "rsync", "-r", "--exclude=*${backup_suffix}",
+        "rsync", "-r", "--exclude=*${backup_suffix}", "--exclude=node_modules",
         "${local_root_dir}/", 
         "${remote_user}\@${remote_url}:${remote_root_dir}"));
 }

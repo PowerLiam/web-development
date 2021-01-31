@@ -29,7 +29,7 @@ function FourDigitGame() {
     return secret;
   }
 
-  function validateSecret(candidateSecret) {
+  function validateGuess(candidateSecret) {
     let digits = candidateSecret.split("");
 
     if (!(digits.length === 4)) {
@@ -60,13 +60,11 @@ function FourDigitGame() {
   }
 
   function handleGuess(guess) {
-    if (guesses.length <= 8) {
-      if (validateSecret(guess)) {
-        if (guess === secret) {
-          setWon(true);
-        }
-        setGuesses(guesses.concat(guess));
+    if (guesses.length <= 8 && validateGuess(guess)) {
+      if (guess === secret) {
+        setWon(true);
       }
+      setGuesses(guesses.concat(guess));
     }
   }
 
